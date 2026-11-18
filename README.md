@@ -1,16 +1,25 @@
-# React + Vite
+# Andover Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The website for Andover Digital, a small web and automation business I started. It is a single-page React app with five pages: Home, Services, About, Pricing and Contact. The idea was automation for local businesses: faster replies, cleaner operations, less repetitive work.
 
-Currently, two official plugins are available:
+This repo is kept as a record of the build. I am not actively working on it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+React 19, TypeScript, Vite, Tailwind CSS 3 and Framer Motion.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running it
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev      # local dev server
+npm run build    # production build into dist/
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How it is built
+
+All the pages live in `src/App.tsx`. The page is switched with React state, so there is no router. Styling is Tailwind plus a few colors defined at the top of the file. The logo and headshot are in `public/`.
+
+## Author
+
+Sansar Karki, [github.com/Sansar-Karki](https://github.com/Sansar-Karki)
